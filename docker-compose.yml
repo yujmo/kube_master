@@ -1,0 +1,6 @@
+version : '3.0'
+services:
+    etcd1:
+        image: yujmo/etcd:latest
+        privileged: true
+        command: /usr/sbin/init && /usr/sbin/sshd -D
